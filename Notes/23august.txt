@@ -1,0 +1,6 @@
+makefile---takes target as a argument
+A rule is:
+     target:	dependencies
+          commands
+.DEFAULT_GOAL:= target(Skips the other targets)
+make command searches Makefile then target and dependencies are executed

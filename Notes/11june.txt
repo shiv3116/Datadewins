@@ -1,0 +1,27 @@
+sudo apt install vim----to install package
+sudo apt update----to check updates
+apt remove/apt purge----uninstall with removing config
+apt upgrade----to upgrade installed packages
+apt search-----search for a package
+apt clean-------clean extra files from cache
+sudo find /var/cache/apt/ | less-----find cache
+apt remove-----delete unused packages
+apt-cache policy----identify package source
+dpkg -L------list all files in package
+dpkg --search----find package providing a specific file
+Redirection                                                          │                                                                      │················································
+ +- allows STD{IN,OUT,ERR} streams to connect to files               │                                                                      │················································
+ +-  < = STDIN redirection                                           │                                                                      │················································
+ +-  > = STDOUT redirection, with truncate                           │                                                                      │················································
+ +- >> = STDOUT redirection, with append                             │                                                                      │················································
+ +- 2> = STDERR redirection    
+ +- e.g.                                                             │                                                                      │················································
+     +- $ cat < infile > outfile 2> errorfile                        │                                                                      │················································
+     +- $ cat < infile >> outfile                                    │                                                                      │················································
+                                                                     │                                                                      │················································
+Pipeline                                                             │                                                                      │················································
+ +- connects STDOUT of one process into STDIN of another     
+ declare -xp > ~/temp/env_vars.txt-----------redirecting output from command to file
+ cat ~/temp/env_vars.txt---------displaying file
+sudo sort /dev/stdin > file1  
+

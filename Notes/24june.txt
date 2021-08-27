@@ -1,0 +1,29 @@
+every variable is gloabl in bash
+by default variables exist in one shell to use a variable in another shell use export
+unset used for removing variable
+-----------case statement------------
+#!bin/bash
+
+fruit = $1
+case $fruit in
+       "Mango" )
+                echo "fruit is mango" ;;
+       "Grapes" )
+                 echo "fruit is $fruit" ;;
+       "Kiwi" )
+               echo "fruit is $fruit" ;;
+        * )
+            echo "Invalid choice" ;;
+esac
+-----------------------------------------------
+----------Files and processes------------------
+init---process with id 1-->user level process(first)
+*it is responsible for starting all processes/resides in sbin/die when system shutdown
+when system is boot system process with id 0 is created which forks another procces which is init process
+init is ancestor of all user processes
+(pstree -p)---which process creates which process/creates a process source tree
+process can read file and write file
+3 standard streams stdin,stdout(buffered) and stderr(unbuffered)
+-----------------------------------------------------------------------------------------------------------
+process control table has all information of processes
+fork-creates new process identical to parent process

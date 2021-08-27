@@ -1,0 +1,5 @@
+/home and /home/. ----> difference is between their path
+/home - file is coming from rrot directory
+/home/. - file is coming from home directory
+-------------------------------------------------------------------------
+OOM killer----when memory runs out then it comes into play

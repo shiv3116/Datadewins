@@ -1,0 +1,27 @@
+ Docker and containerization                      │                                                                      │················································
+                    ...........................                      │                                                                      │················································
+                                                                     │                                                                      │················································
+ Containers                                                          │                                                                      │················································
+  +- share same kernel                                               │                                                                      │················································
+  +- bundle own software, libraries and configurations               │                                                                      │················································
+  +- may communicate with each other                                 │                                                                      │················································
+  +- use Linux cgroups and namespaces                                │                                                                      │················································
+                                                                     │                                                                      │················································
+ cgroups    = control groups                                         │                                                                      │················································
+   isolate and limit resources                                       │                                                                      │················································
+ namespaces = kernel resource partitioning                           │                                                                      │················································
+   partition kernel resources      
+
+
+docker engine ----  creates run and manage all the processes of docker
+    *docker cli,api,daemon
+       docker cli ---- helps interaction between api and daemon
+docker object --- *docker images=>sets of instructions used to create containers(blue print)
+                  *docker volume
+                  *docker network
+docker registry --- like repository in github
+docker compose ---- service within a docker, helps in running multiple containers
+docker swan ---- manages different containers
+......................................................................................................................................................................
+apt-get install docker-compose --- installs docker runtime and docker compose
+usermod -a -G docker user ---  add user to dockergroup

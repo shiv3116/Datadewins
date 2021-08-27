@@ -1,0 +1,10 @@
+with the help of i-node number files are searched
+..............................................................
++-MEMORY
+Paging--memory is divided into parts and useful pages are brought into memory in case program size is greater than RAM
+Example: process---5 pages
+         RAM--3 pages    (Suppose 1 page = 1 Gb)
+*we cant comunicate directly with hardware so we use system calls
+*kernel mode is used in system calls
+*shell gives instruction through system calls to interact with hardware
+*** strace---to trace system calls and signals

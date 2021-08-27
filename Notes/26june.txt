@@ -1,0 +1,39 @@
+Message queues-->writing messages and putting it on stack so that another process can see it when it's free
+Semaphore sets-->they are for synchronizing actions among multiple processes
+shared memory---->divided memory area between different processes
+.......................................................................................................................
+---------------Message queues-------------
+*kernel is facilitating this mechanism-create a queue
+*unique queue identifier(qid)
+*sort of data structure--queues for writer and reader
+*when a process reads or write a message its uid and gid are checked
+*if write queue is full and a process comes it is kept in waiting queue and when a process comes to read write queue becomes vacant and waiting process is executed
+-----------------semaphore sets---------------
+*decrement counter when work is in progress and then increase the counter when work is done
+----------------shared memory segments-------------
+*communcation is achieved through a shared piece of memory
+.....................................................................................................................................................................................
+*command ipcs
+         ipcmk --help
+ipcmk --queue my_queue(creating a message queue)
+ipcmk --semaphore 2(creating a semaphore array of size 2)
+ipcrm --queue-id 0(removing queue)
+ipcrm --semaphore-id 0(removing semaphore)
+.............................................................................................................................................................................................
+-------------signals------------------
+*asynchronus notifications
+*destination and source process
+--------sockets---------
+*sort of end point communication
+*two types-single and multiple
+*single-unix domain socket
+*multiple-tcp,udp etc
+IN UNIX
+*packet---no order is maintained while sharing data
+*stream oriented----sequential transfer
+TCP SOCKETS
+*stream oriented
+*full duplex,reliable
+UDP SOCKETS
+*packet oriented
+*full duplex,un-reliable

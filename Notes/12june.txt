@@ -1,0 +1,54 @@
+-----------core utils-----
+gnu.org/software/coreutils/
+dpkg -L coreutils---------listing all files of coreutils package
+/bin contains executables required for emergency repairs booting etc
+pwd-----display present workig directory
+ls/ dir/ vdir----listing directory(find difference among three)
+mkdir----make directory
+ln               : create link to another file                       │                                                                      │················································
+readlink         : print resolved symbolic link                      │                                                                      │················································
+mv               : Move a file                                       │                                                                      │················································
+rm               : Remove a file                                     │                                                                      │················································
+rmdir            : Remove a directory
+mktemp           : Make a temporary file                             │                                                                      │················································
+mknod            : Make a node in file system (device or FIFO)
+touch            : create empty file or update timestamps
+df----list file system disk usage
+dd-----convert and copy a file
+sync-----synchronize cached writes
+chmod,chown,chgrp,cat(find on your own)
+uname            : Print system information                          │                                                                      │················································
+date             : Print or set system date and time                 │                                                                      │················································
+echo             : Display a line of text                            │                                                                      │················································
+sleep            : Delay for a specified ammount of time             │                                                                      │················································
+stty             : Print or change terminal line settings
+false and true   : Do nothing unsuccessfully/ successfully 
+head---output first 10 part by default
+tail--output last 10 part by default
+tac----concatenate and print in reverse
+sort/ tsort----sort / topologically sort
+wc----newline,word and byte counts
+uniq----omit repeated lines/adjacent uniqueness
+uniq -c==how many times repeating
+cut----remove sections of text from each line of file
+paste-----merge lines of files
+join-----join lines of two fields on a common field
+fold----wrap each inputline to fit in a specified width
+split---split a file into pieces
+csplit------split a file into sections by context
+expand/unexpand----tabs to space/space to tab
+tr---translate or delete characters
+shuf----generate random peermutations
+fmt---simple optimal text formatter
+numfmt---convert numner to human readbale string
+nl----number line oof files
+od---dump files in octal and other formats
+ptx---produce a permitted index of file contents
+comm----compare two sorted files line by line
+diff---sorted is not necessary/context based
+base64----encode and decode string
+sum----checksum and count blocks for each file
+md5sum----compute and check MD5 message digests
+test---check file types
+stat----display file or filesystem status
+du-----estimate file space usage

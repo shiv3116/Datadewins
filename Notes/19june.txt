@@ -1,0 +1,99 @@
+case:1 Explicitly invoking the shell
+bash script
+*This will start the instance of bash that runs the command in script
+* when it terminates the subshell dies and the original shell awakens and returns a system prompt
+case:2 If the file is exectubale ./script name(use chmod to give executable permission)
+In case 1 and 2 the changes are environment are lost as soon as the script finishes
+case3: Dot command . ./scriptname
+*It takes a file name as its argument and causes your current shell to read and execute the commands in it
+(case 1 and 2 creates a new shell while in case 3 current shell is used)
+*Any changes to your environment remains
+*Only read permission is required no executable permission is required
+-----------------------------------------------------------------------------------------------------------------------------
+*if statement: v1=8 v2=5 if [ "$v1" -gt "$v2" ]; then echo "yes"; fi(to exitif block)
+gt for greater than, lt for less than.
+*loops -for/ while/ until
+loops.sh----
+#!/bin/bash
+for i in 1 2 3 
+do 
+   echo $i
+done-------
+for i in {1..10}----if we want large set of numbers
+for i in {1..10..2}-----alternate values of i in range 1 to 10
+-------------
+for i in ls pwd date
+       echo "------$i-----"
+       $i
+done
+----------------------
+for i in *
+do
+     if[ -d $i ]
+     then
+       echo "$i"
+     fi
+done
+-----------------------
+#!/bin/bash
+
+n=1
+while [ $n -le 10 ] (le stands for less)
+do
+     echo "$n"
+     n = $((n+1))
+done
+-----until-----
+#!/bin/bash
+n=1
+until [ ! $n -le 10 ]
+do
+     echo "$n"
+     n=$((n+1))
+done
+------select------(used to construct menus in easy way)
+#1/bin/bash
+
+select fruit in orange apple banaan kiwi
+do
+   echo "Fruit selected"
+done
+----break and continue-------
+#!/bin/bash
+for ((i=1;i<=10;i++))
+do
+    if[ $i -gt 5 ]
+    then
+         break
+    fi
+      echo "$i"
+done
+
+for ((i=1;i<=10;i++))
+do 
+     if[ $i  -eq 5 -o $i -eq 8 ]
+     then
+         continue
+     fi
+     echo "$i"
+done
+----------------------------------------
+FUNCTIONS
+#!/bin/bash
+
+function hello(){
+         echo "Hello $USER"
+}
+hello(function calling statement)
+----------ARRAY---------
+#!/bin/bash
+
+fruit=('Banana' 'Peach' 'Orange')
+echo "${fruit[@]}"--(Prints all elements of array)
+
+fruit[3]='Guava'----adds new element
+echo ${!fruit[@]} 
+echo ${#fruit[@]} 
+unset fruit[1]-----removes values(first index in this case)
+------------------------------
+built in variables

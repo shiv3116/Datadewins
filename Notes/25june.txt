@@ -1,0 +1,34 @@
+ps->snapshot of current process
+kill->to kill a process(followed with -9 and pid)
+pstree->displays a tree of processes
+
+
+ps aux | head-->much like task manager
+   %mem-->ram used/total ram
+   %cpu-->cpu time used/real time required
+   vsz-->virtual memory size in Kb
+   RSS-->part of physical memory which is not swapped(this is not shareable)
+   shared memory-->if a process is given some memory an it uses less than given then another process may use it's availaible space
+   TTY-->controlling terminal(in case of interactive program)
+   STAT-->process state code
+   START-->When process started
+   TIME-->user + system cpu time usage
+--------------------------------------------------------------------------------------------------------------------------------------------------------
+*zombie process-->a subprocess whose parent procsess has died and it takes some other process as it's parent
++-->foreground process group
+
+--------top command---------
+eg.-> top -w120 -b1 -n1 | head -12
+*top
+up-->denotes uptime
+users-->total number of users
+load average-->system load average over last 1,5,15 min
+*tasks
+total,running,slepping,stopped,zombie
+*cpuN state
+us->time assigned for user process
+sy-->time for kernel process
+----------------------------------------------
+lsof--->used to see which files are opened by processes
+free-->summary of free/shared memory info
+ctrl+z-->to suspend a process(process goes to background)

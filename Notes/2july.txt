@@ -1,0 +1,14 @@
+c is system programming language
+and it is procedural programming language
+structured programming language is subset of procedural 
+structured means dividing the problem into small parts
+that means making functions
+c is mid level
+to compile ---- gcc filename
+by default a.out is object file
+so
+gcc hello.c -o hello.out
+-o specifies output name
+
+creating a file
+FILE *fopen( const char *filename, const char *mode );               

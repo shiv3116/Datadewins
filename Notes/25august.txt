@@ -1,0 +1,12 @@
+docker compose --- for multiple containers
+   vim docker_compose.yml---to create docker compose file
+docker-compose up ---to run docker compose file
+(you have to run docker compose file in docker directory)
+docker container ls ----  to list all docker containers
+FROM: specifies base image for container
+COPY: copy file from build contect into image's file system
+WORKDIR: set a working directory in which all commands can run
+RUN: execute commands in a new layer on top of the current image
+docker run -it -d --name cont1 -p 2000:80 custom_image:latest ---> run container in detach mode
+docker exec -it cont1 bash ----> runs bash service in container
+docker kill cont1 ---> kill the container

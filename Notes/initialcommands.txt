@@ -1,0 +1,58 @@
+dd-assistant welcome
+touch ~/.first run---->welcome tour
+ls-la | grep first--->to check
+exit---->for exit
+ctrl+- (reduce windows size)
+ctrl+b+d------->close
+ls -lah/tmp-->ls for list
+              l-long a-all tmp-folder
+man -ls
+man man-->man page manual
+man man | grep -v '^ ' | grep -v '^$'---->Displaying sections of man pages
+man -k xargs
+man -k read | less
+man readdir
+man 2 readdir--->2 section name for that section
+less /etc/passwd
+sudo less /etc/shadow------>only root user
+sudo grep sj /etc/shadow
+man 5 passwd--->password manual
+passwd->changepassword
+id->for id gid
+getent--> entries from nsswitch libraries
+ps -u-->get user's process
+root user has UID 0, has unrestricted access to file system
+rights can be delegated with sudo
+su--->switching user
+setuid
+/etc/passwd
+usermod-->updates group membership
+chgrp-->changes group ownership
+metadta-information about file
+data-content of file
+metadata is stored in i-node
+data is stored in data block
+lsblk---->list disks
+blkid--->list volumes/partitions
+fdisk---->partition disk(sudo command)
+mkfs.ext4---->create EXT4 filesystem(sudo command)
+mkfs.fat32--->DOS
+superblock stores information inode bit map and data block bit map
+inode bitmap--->free/used inode
+ls -ldi /----->asking for i node of root directory
+ls -ldi .----->for current directory
+pwd---->current directory
+stat /------>information of root directory
+mkdir-->make directory command
+touch test-->creating file test
+------------------File Ownership-------------------
+ls -ld temp
+0 = permission revoked
+1 = permission granted
+chmod a+w test
+------------------Hard link/soft link--------------
+ln -s /temp/test testlink(s for soft link)
+-----------Storage in data blocks ---------------
+ +- Address of few data blocks is stored in i-node
+8 db, 1 sib, 1 dib, 1 tib
+size of each disk block-128 bytes

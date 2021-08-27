@@ -1,0 +1,14 @@
+osi layer - 7layers(google it)
+tcp ip protocol---------------
+developed by arpanet
+data is divided into segments then packets and then in bits(frames) in transport layer
+data is sent by application layer
+ports -- 53/DNS 80/HTTP
+inet is physical address of device
+ip a s////
+etc/services////
+host-----to see ip add
+/sbin/arp -a-----shows mapping of ip to physical address
+full duplex---both parties communicate simultaneously
+half duplec---both parties can't communicate simultaneously
+Q. how google webpage opens
