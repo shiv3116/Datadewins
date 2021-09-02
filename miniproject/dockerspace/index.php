@@ -1,5 +1,5 @@
 <h1>Hello Datadewins</h1>
-<h4>Attempting MYSQL Connection</h4>
+<h4>Attempting MYSQL Connection.....</h4>
 <?php
 $host = 'localhost';
 $user = 'root';
